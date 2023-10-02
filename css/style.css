@@ -164,6 +164,9 @@ footer {
   background: rgba(253, 252, 252, 0.137);
   color: #fff;
   font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 /*philosophy page*/
 #phil-div {
@@ -171,17 +174,24 @@ footer {
   color: #010c22;
 }
 .nav-pills .nav-item > a {
+  color: black;
+  font-size: large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   &:hover,
   &:focus,
   &:active {
-    color: #33031a;
+    color: #010c22;
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
   }
 }
+.nav-pills .nav-link.active {
+  background-color: #33031a !important;
+  color: white !important;
+}
+
 .navbar-text {
   color: #fff;
 }
