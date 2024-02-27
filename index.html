@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<body id="body-content" style="background-image: url(images/welcome-banner.jpg);" draggable="true" oncontextmenu="return false;">
-	<title></title>
+	<link rel="icon" type="image/png" href="images/facefront.png">
+</head>
+<body id="body-content" draggable="false" oncontextmenu="return false;">
+	<title>HOME</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+	<!--<link rel="shortcut icon" type="image/jpg" href="images/about-image.jpg" />-->	
 	<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
 	<link rel="stylesheet" href="css/style.css">
-	<style>
-	</style>
+
+	<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupModalLabel">&#128150; WELCOME TO <b>JAYNISHA AGRAVAT'S</b> PORFOLIO &#128150;</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">❌</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="popup-image" src="images/popup.png" alt="Pop-up Image">
+                </div>
+            </div>
+        </div>
+    </div>
+		
 	<section class="sticky-top">
 		<nav class="navbar navbar-expand-lg navbar-one sticky-top" id="nav1">
 			<div class="container-fluid">
@@ -22,6 +37,16 @@
 					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+				<!--<div class="form-check form-switch mx-4">
+					<input
+					  class="form-check-input p-2"
+					  type="checkbox"
+					  role="switch"
+					  id="flexSwitchCheckChecked"
+					  checked
+					  onclick="darkmodeFunction()"
+					/>
+			  	</div>-->
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
 						<li class="nav-item ">
@@ -41,7 +66,10 @@
 						<li class="nav-item">
 							<a class="nav-link" href="resume.html"><i class="fa-solid fa-file-lines"></i> Resume</a>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item">
+							<a class="nav-link" href="Services.html"><i class="fa-solid fa-gear"></i>Services</a>
+						</li>
+						<!--<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="Services.html" role="button"
 								data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i>
 								Services
@@ -56,7 +84,7 @@
 								<li><a class="dropdown-item" href="Services.html">UI / UX Designing</a></li>
 								<li><a class="dropdown-item" href="Services.html">Graphics Designing</a></li>
 							</ul>
-						</li>
+						</li>-->
 					</ul>
 					<!--<form class="d-flex" role="search">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
@@ -69,7 +97,7 @@
 			</div>
 		</nav>
 	</section>
-	<section>
+	<!--<section>
 		<nav>
 			<div class="container-fluid">
 				<div class="row">
@@ -89,56 +117,139 @@
 				</div>
 			</div>
 		</nav>
-	</section>
-	<section id="welcome-home" class="welcome-home">
+	</section>-->
+	<section id="welcome-home" class="welcome-home"  style="background-image: url(images/hi.png); z-index: 1;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center mt-5">
 					<div class="header-text">
 						<p></p>
 						<p></p>
-						<h4><span class="color-animation mb-2" style="font-size: larger;">
+						<h4><span class="color-animation mb-5" style="font-size: larger;">
 								HEY THERE.! WELCOME.! </span></h4>
 						<p></p>
 						<p></p>
-						<h5>
-							<p class="mb-4 drop-in" id="intro-p">Hope You
-								are Doing Good.! My Name is Jaynisha Agravat. I am From Gujarat, India.
-								Happy to Have you Here.
-								As a highly skilled and dedicated Software developer, I am thrilled to
-								introduce myself to
-								you. With a strong passion for coding and a profound knowledge of advanced Web
-								development techniques, <b>I strive to create stunning and functional Software
-									Applications</b> that meet
-								the highest standards of excellence."
-							</p>
-						</h5>
-						<p></p>
-						<p></p>
-						<section id="hero">
-							<div class="hero-container">
-								<div class="wow fadeIn">
-									<h3>I AM <button class="revolving-button"><span class="revolving"></span></button>
-									</h3>
-								</div>
-							</div>
-						</section>
-						<p><button class="btn btn-outline" type="submit"><a href="contact.html"
-									class="btn btn py-3 px-4 align-items-center mt-3" id="contact-btn">Contact
-									Now</a></button>
-						</p>
-						<p>
-						</p>
+					
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section id="welcome-home" class="welcome-home">
+		<!--<div class="container">
+			<div class="image-container">
+				<img src="images/hi.png" alt="HI..">
+			</div>			
+		</div>-->
+		<div class="container mb-5">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-6 order-md-2 image_wrapper">
+					<!--<img src="images/abboutt.png" alt="Background Image" class="overlay overlay_5 icon Image-Class img-rounded img-thumbnail rounded-circle mx-auto d-block" width="300">
+					<i class="fa-brands fa-python overlay-icon"></i>
+					<i class="fa-solid fa-database overlay-icon"></i>
+
+					<img src="images/hi.png" alt="Overlay Image" class="Image-Class img-rounded img-thumbnail rounded-circle mx-auto d-block" width="300" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);background-color: rgb(255, 230, 4);z-index: 1;">
+					
+					-->
+					<img src="images/hi.png" alt="HI" id="rotating-image" class="Image-Class img-rounded img-thumbnail rounded-circle mx-auto d-block" width="300" style="background-color: rgb(255, 230, 4);z-index: 1;">
+					
+					<div class="overlay overlay_5">
+						<ul class="icon1"><i class="fa-brands fa-python"></i></ul>
+						<ul class="icon2"><i class="fa-solid fa-database"></i></ul>	
+						<ul class="icon3"><i class="fa-solid fa-feather"></i></ul>
+						<ul class="icon4"><i class="fa-brands fa-bootstrap"></i></ul>			
+					</div>
+					<!--<i class="icon fa-brands fa-python"></i> 
+					<i class="icon fa-solid fa-database"></i>
+					<i class="icon fa-brands fa-bootstrap"></i>
+					<i class="icon fa-brands fa-css3-alt"></i>-->					
+				</div>
+				<div class="col-md-6 order-md-1">
+					<span class="waving-hand">👋</span><span class="hand-text" style="font-size: 2.5em; font-family: 'Courier New', Courier, monospace;">Hi</span>
+					
+					<h1 class="mb-2" style="font-weight: bold;">I'M Jaynisha Agravat</h1>
+					<h3>I am 
+						<a href="" style="color: blue;font: size 0.3em;font-style:normal;font-family: 'Courier New', Courier, monospace;"  class="typewrite" data-period="2000" data-type='["SOFTWARE DEVELOPER", "BACKEND DEVELOPER", "FULL STACK DEVELOPER", "FRONT END DEVELOPER" ]'>
+						  <span class="wrap"></span>
+						</a>
+					</h3>	
+					<p class="drop-in" id="intro-p">Continuously staying updated with the latest industry trends and best practices, I am
+						constantly evolving and expanding my skill set to ensure that my clients receive
+						cutting-edge solutions that keep them ahead in the digital world.
+						<p class="text-center"><button class="btn btn-outline" type="submit"><a href="Services.html"
+							class="btn btn py-2 px-3 align-items-center" id="contact-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i> Check Services</a></button>
+						</p>
+					</p>			
+				</div>
+			</div>
+		</div>
+		<div class="container mt-7 py-5">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-4 order-md-2">
+					<img src="images/laptop wave.png" alt="HI" class="Image-Class img-rounded img-thumbnail rounded-circle mx-auto d-block" width="300" style="background-color: rgb(127, 225, 255);">
+					
+				</div>
+				<div class="col-md-8 order-md-2">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="header-text">
+								<!--<p></p>
+								<p></p>
+								<h4><span class="color-animation mb-2" style="font-size: larger;">
+										HEY THERE.! WELCOME.! </span></h4>
+								<p></p>
+								<p></p>-->
+								<h5>
+									<p class="mb-4 drop-in mt-5" id="intro-p" style="font-size: smaller;">Hope You
+										are Doing Good.! My Name is Jaynisha Agravat. I am From Gujarat, India.
+										Happy to Have you Here.
+										As a highly skilled and dedicated Software developer, I am thrilled to
+										introduce myself to
+										you. With a strong passion for coding and a profound knowledge of advanced Software and Web
+										development techniques, <b>I strive to create stunning and functional Software
+											Applications</b> that meet
+										the highest standards of excellence. I Believe,
+									</p>
+								</h5>
+								<p></p>
+								<p></p>
+								<figure class="text-center">
+									<blockquote class="quotClass blockquote" style="color: #33031a;">
+										<p>"Objects of Beauty can only be produced when the developer is a blend of ARTIST and
+											SCIENTIST"</p>
+									</blockquote>
+									<figcaption class="blockquote-footer">
+										<cite title="Source Title">Jaynisha Agravat</cite>
+									</figcaption>
+								</figure>
+								<!--<section id="hero">
+									<div class="hero-container">
+										<div class="wow fadeIn">
+											<h3>I AM <button class="revolving-button"><span class="revolving"></span></button>
+											</h3>
+										</div>
+									</div>
+								</section>-->
+								<p><button class="btn btn-outline" type="submit"><a href="contact.html"
+											class="btn btn py-2 px-3 align-items-center mt-3" id="contact-btn">Contact
+											Now</a></button>
+								</p>
+								<p>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 	<section>
 		<div class="container">
 			<div class="row justify-content-center py-5 mt-5">
 				<div class="col-md-12 heading-section text-center">
-					<h2 class="mb-4">MY OWN PHILOSOPHY OF CODING</h2>
+					<h2 class="mb-4">MY PHILOSOPHY OF CODING</h2>
 					<h4><i>My 4A Principles</i></h4>
 					<cite>Aesthetic, Affable, Accessible, Assuring</cite>
 				</div>
@@ -278,7 +389,36 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="py-5 mt-5">
+		<div class="container mt-7 mb-2 py-5" id="portfolio-front">
+			<div class="row d-flex align-items-center">
+				<div class="col-md-5 order-md-2">
+					<img src="images/PortfolioFRONT.png" alt="HI" class="img-thumbnail mx-auto d-block" width="500" height="900">					
+				</div>
+				<div class="col-md-7 order-md-2 mt-3">
+					<div class="row">
+							<div class="header-text">
+								<h3>&#128150;Impressed With this One?</h3>
+								<h5>
+									<p class="mb-4" id="intro-p" style="font-size: smaller;">Contact me now And I'll Help you build the website that follows My 4A
+										Principles. That is
+										<b><i>"Aesthetic, Affable, Accessible, Assuring.!"</i></b>
+									</p>
+								</h5>
+								<p>
+									<div class="d-flex justify-content-end">
+									<button class="btn btn-outline" type="submit"><a href="contact.html"
+											class="btn btn py-2 px-3 align-items-center mt-3" id="contact-btn">Contact
+											Now</a>
+									</button>
+									</div>
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section>
 		<div class="container" id="contact">
 			<div class="row">
@@ -286,10 +426,10 @@
 					<div class="header-text">
 						<p></p>
 						<p></p>
-						<span class="subheading" style="font-size: larger;">
+						<span class="subheading" style="font-size: larger;color: black;">
 							FIND ME ON </span>
 						<p></p>
-						<h3 style="font-size: smaller; font-style: italic;">feel free to connect</h3>
+						<h3 style="font-size: smaller; font-style: italic;color: black;">feel free to connect</h3>
 						<p></p>
 						<div class="container-fluid-text-center" id="contact-button">
 							<button type="button" class="btn btn-default btn-circle btn-xl" id="globe-one"><a
@@ -326,10 +466,10 @@
 					<div class="header-text">
 						<p></p>
 						<p></p>
-						<span class="subheading" style="font-size: larger;">
+						<span class="subheading" style="font-size: larger; color: black;">
 							I ALWAYS WELCOME YOUR VALUEABLE OPINION</span>
 						<p></p>
-						<h3 style="font-size: smaller; font-style: italic;">feel free to drop your Suggestions/Reviews
+						<h3 style="font-size: smaller; font-style: italic;color: black;">feel free to drop your Suggestions/Reviews
 						</h3>
 						<p></p>
 						<div class="container-fluid-text-center" id="contact-button">
@@ -353,7 +493,7 @@
 				<span class="navbar-text">
 					COPYRIGHT<i class="fa-regular fa-copyright"></i> <b>AJ.</b></span>
 				<span class="navbar-text">
-					DESIGN AND DEVELOPED BY <b>AJ.</b>
+					DESIGN AND DEVELOPED WITH &#128150; BY <b>AJ.</b>
 				</span>
 				<div class="container-fluid-text-center">
 					<button type="button" class="btn btn-default btn-circle btn-xl" id="footer-button"><a href="#"><i
@@ -362,15 +502,28 @@
 			</div>
 		</nav>
 	</footer>
+	
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/e2f50cdb51.js" crossorigin="anonymous"></script>
-</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            // Display the pop-up with a delay for better user experience
+            setTimeout(function() {
+                $('#popupModal').modal('show');
+            }, 1000); // Adjust delay as needed
 
-</html>
+            // Ensure the close button works even if the pop-up is triggered dynamically
+            $('#popupModal').on('shown.bs.modal', function() {
+                $('.close').on('click', function() {
+                    $('#popupModal').modal('hide');
+                });
+            });
+        });
+    </script>
 </body>
-</head>
-
 </html>

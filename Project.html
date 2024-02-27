@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+	<link rel="icon" type="image/png" href="images/facefront.png">
+</head>
 
-<body style="background-image: url(images/welcome-theme.jpg);" draggable="true" oncontextmenu="return false;">
-    <title></title>
+<body draggable="true" oncontextmenu="return false;"><!-- style="background-image: url(images/welcome-banner.jpg);"-->
+    <title>PROJECTS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,13 +13,14 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-
     <style>
+        .card-group {
+        margin-top: 1rem;
+        }
         #button {
             background-color: #33031a;
             color: aliceblue;
         }
-
         #tooltip {
             background: #010c22;
             color: white;
@@ -94,22 +96,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="resume.html"><i class="fa-solid fa-file-lines"></i> Resume</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="Services.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i>
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: #33031ae5;">
-                                <li><a class="dropdown-item" href="Services.html">Click to View Now</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="Services.html">Website Designing</a></li>
-                                <li><a class="dropdown-item" href="Services.html">Website development</a></li>
-                                <li><a class="dropdown-item" href="Services.html">UI / UX Designing</a></li>
-                                <li><a class="dropdown-item" href="Services.html">Graphics Designing</a></li>
-                            </ul>
-                        </li>
+						<li class="nav-item">
+							<a class="nav-link" href="Services.html"><i class="fa-solid fa-gear"></i>Services</a>
+						</li>
                     </ul>
                 </div>
             </div>
@@ -121,21 +110,200 @@
                 <div class="col-md-12 heading-section text-center">
                     <h2 class="mb-4">MY RECENT WORKS</h2>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4"
+                <div class="container">
+                    <ul class="nav nav-tabs justify-content-center" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#section1" role="tab" style="color: black;">SOFTWARE DEVELOPMENT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#section2" role="tab" style="color: black;">WEB DEVELOPMENT</a>
+                      </li>
+                    </ul>
+                
+                    <div class="tab-content">
+                      <div class="tab-pane active fade show" id="section1">
+                        <div class="row row-cols-1 row-cols-md-3 g-4"
+                            style="word-spacing: 5px; line-height: 30px; text-align: justify;">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/IMS.jpg" class="card-img-top" alt="..."
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inventory Management System</h5>
+                                        <p class="card-text">This Software
+                                            is Designed Using <b>Tkinter</b> (A Python Library) and developed with<b> Python and
+                                            MySQL</b>. It optimized inventory management processes, enhanced efficiency,
+                                            and achieved cost savings. 
+                                            Its user-friendly interface, dynamic database selection, 
+                                            and comprehensive features make it an ideal solution for businesses of all sizes and industries.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="read-more"><a class="nav-link"
+                                                        href="https://drive.google.com/file/d/1JA4oD0goKu1XvFfiPXX0Ls9w_IGIRGz2/view?usp=drive_link"><i class="fa-solid fa-video"></i>
+                                                        View Now</a></button>                                                     
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/RealTimeChat.jpg" class="card-img-top" alt="..."
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GUI Real Time Chat Application</h5>
+                                        <p class="card-text">This Real Time Chat Application in is Designed Using <b>Tkinter</b> 
+                                            (A Python Library) and developed with<b> Python
+                                            </b> from scratch. 
+                                            Client file has been created for the chat interface and the server file will handle the backend. 
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="read-more"><a class="nav-link"
+                                                        href="https://drive.google.com/file/d/1SR_UWVd58COUGR3oLDp9-2vLe5RjyzBx/view?usp=drive_link"><i class="fa-solid fa-video"></i>
+                                                        View Now</a></button>
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/bot.jpg" class="card-img-top" alt="..."
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GUI chatbot application</h5>
+                                        <p class="card-text">This GUI (Graphical User Interface) Application
+                                            is Designed Using <b>Tkinter</b> (A Python Library) and developed with<b> Python
+                                            </b>.This Application is mainly built for answering standard FAQs for an online clothing store.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="read-more"><a class="nav-link"
+                                                        href="https://drive.google.com/file/d/16-AiTaaW-9vkc_23XTcvDk6SuvLFApZq/view?usp=sharing"><i class="fa-solid fa-video"></i>
+                                                        View Now</a></button>
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="section2">
+                        <div class="row row-cols-1 row-cols-md-3 g-4"
+                            style="word-spacing: 5px; line-height: 30px; text-align: justify;">
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/PortfolioFRONT.png" class="card-img-top" alt="PortfolioFRONT"
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Portfolio Website</h5>
+                                        <p class="card-text">A Portfolio website is a curated, online space that give brief
+                                            description of a your personality in
+                                            a way that effectively demonstrates
+                                            your professional skills and abilities. This Personal Portfolio Website
+                                            is Designed Using <b>HTML, CSS, Javascript</b> and <b>Bootsrap.</b> It is one of the
+                                            most
+                                            practical
+                                            and memorable ways to collaborate with potential customers and/or
+                                            employers.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="read-more"><a class="nav-link"
+                                                        href="videos/Feedbackv.mp4"><i class="fa-solid fa-video"></i>
+                                                        View Now</a></button>
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/feedback_bg.jpg" class="card-img-top" alt="..."
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Feedback Page</h5>
+                                        <p class="card-text">This Web Page
+                                            is Designed Using <b>HTML, CSS, Bootsrap</b> and developed with<b> PHP and
+                                                MySQL</b>. This web page allow users to submit their feedback using
+                                            HTML form. The PHP script validates the feedback that is submitted
+                                            and
+                                            then inserts it into the MySQL database. The Feedback Stored in database is
+                                            also displayed in the desending order on the
+                                            Customer's testimonial.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="read-more"><a class="nav-link"
+                                                        href="https://drive.google.com/file/d/1r__Fivf38zmVoDq_yLmCokaKiEPDvVZx/view?usp=drive_link"><i class="fa-solid fa-video"></i><!--<i class="fa-solid fa-circle-chevron-right"></i>-->
+                                                        View Now</a></button>
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/freelance-attorney.jpg" class="card-img-top" alt="..."
+                                        style="object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Freelance Attorney System</h5>
+                                        <p class="card-text"><i>*This is an Academic project developed in a team.*</i> A
+                                            freelance attorney system is a
+                                            platform that connects legal
+                                            professionals such as advocates or lawyers with law firms or clients who require
+                                            legal services on a project or
+                                            freelance basis. Designed with <b>HTML, CSS, Javascript</b> and Developed in
+                                            <b>PHP,</b> This
+                                            Project Aimed at automating and simplifying the process of justice.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">
+                                            <div class="text-center">
+                                                <button class="btn btn" type="submit" id="button" aria-describedby="tooltip"><a
+                                                        class="nav-link disabled" aria-disabled="true" href=""
+                                                        data-toggle="popover"><i class="fa-solid fa-circle-chevron-right"></i>
+                                                        View Now</a></button>
+                                                <div id="tooltip" role="tooltip">
+                                                    *_No External Links Available for this Project._*
+                                                    <div id="arrow" data-popper-arrow></div>
+                                                </div>
+                                            </div>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row row-cols-1 row-cols-md-3 g-4"
                     style="word-spacing: 5px; line-height: 30px; text-align: justify;">
                     <div class="col">
                         <div class="card h-100">
                             <img src="./images/feedback_bg.jpg" class="card-img-top" alt="..."
                                 style="object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Feedback System</h5>
-                                <p class="card-text">This Website
-                                    is Designed Using <b>HTML, CSS, Bootstrap</b> and developed with<b> PHP and
-                                        MySQL</b>. It allow users to submit their feedback using
+                                <h5 class="card-title">Feedback Page</h5>
+                                <p class="card-text">This Web Page
+                                    is Designed Using <b>HTML, CSS, Bootsrap</b> and developed with<b> PHP and
+                                        MySQL</b>. This web page allow users to submit their feedback using
                                     HTML form. The PHP script validates the feedback that is submitted
                                     and
                                     then inserts it into the MySQL database. The Feedback Stored in database is
-                                    also displayed in the descending order on the
+                                    also displayed in the desending order on the
                                     Customer's testimonial.
                                 </p>
                             </div>
@@ -152,7 +320,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="./images/Portfolio Website.png" class="card-img-top" alt="..."
+                            <img src="./images/PortfolioFRONT.png" class="card-img-top" alt="PortfolioFRONT"
                                 style="object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Personal Portfolio Website</h5>
@@ -178,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col">
+                    *<div class="col">
                         <div class="card h-100">
                             <img src="./images/react-app.png" class="card-img-top" alt="..." style="object-fit: cover;">
                             <div class="card-body">
@@ -199,7 +367,7 @@
                                 </small>
                             </div>
                         </div>
-                    </div>-->
+                    </div>*
                     <div class="col">
                         <div class="card h-100">
                             <img src="./images/freelance-attorney.jpg" class="card-img-top" alt="..."
@@ -232,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col">
+                    *<div class="col">
                         <div class="card h-100">
                             <img src="./images/employee-management-.png" class="card-img-top" alt="..."
                                 style="object-fit: cover;">
@@ -260,28 +428,26 @@
                                 </small>
                             </div>
                         </div>
-                    </div>-->
-                </div>
+                    </div>*
+                </div>-->
             </div>
         </div>
     </section>
-
-
-    <footer class="footer-style">
-        <nav class="navbar bg-dark">
-            <div class="container-fluid">
-                <span class="navbar-text">
-                    COPYRIGHT<i class="fa-regular fa-copyright"></i> <b>AJ.</b></span>
-                <span class="navbar-text">
-                    DESIGN AND DEVELOPED BY <b>AJ.</b>
-                </span>
-                <div class="container-fluid-text-center">
-                    <button type="button" class="btn btn-default btn-circle btn-xl" id="footer-button"><a href="#"><i
-                                class="fa-solid fa-arrow-up"></i></a></button>
-                </div>
-            </div>
-        </nav>
-    </footer>
+	<footer class="footer-style">
+		<nav class="navbar bg-dark">
+			<div class="container-fluid">
+				<span class="navbar-text">
+					COPYRIGHT<i class="fa-regular fa-copyright"></i> <b>AJ.</b></span>
+				<span class="navbar-text">
+					DESIGN AND DEVELOPED WITH &#128150; BY <b>AJ.</b>
+				</span>
+				<div class="container-fluid-text-center">
+					<button type="button" class="btn btn-default btn-circle btn-xl" id="footer-button"><a href="#"><i
+								class="fa-solid fa-arrow-up"></i></a></button>
+				</div>
+			</div>
+		</nav>
+	</footer>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script>
 
@@ -348,9 +514,4 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e2f50cdb51.js" crossorigin="anonymous"></script>
 </body>
-
-</html>
-</body>
-</head>
-
 </html>
